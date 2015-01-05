@@ -16,7 +16,7 @@ $sql = "UPDATE items SET item_price='20.00' WHERE id=2";
 if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
 } else {
-    echo "Error updating record, woops!: " . $conn->error;
+    echo "Error updating record: " . $conn->error;
 }
 
 $conn->close();
